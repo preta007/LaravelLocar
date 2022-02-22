@@ -1,0 +1,83 @@
+
+["DateTime"]: [2022-02-11 11:36:57]
+Inserido por: null
+Cliente: {"nome":"DEBORA RIBEIRO PEREIRA ALVES","cpf":"124.847.477-56","data_nasc":"1987-11-01","score":808,"renda":"1379.18","id":3}
+
+["DateTime"]: [2022-02-11 11:42:16]
+Editado por: {"id":1,"name":"Sistema","email":"admin@admin.com","theme":"default"}
+Antes das atualizações: {"id":3,"nome":"DEBORA RIBEIRO PEREIRA ALVES","cpf":"124.847.477-56","telefone":null,"telefone_contato":null,"telefone_referencia":null,"nome_referencia":null,"score":"808","renda":"1379.18","data_nasc":"1987-11-01","email":null}
+Depois de atualizar: {"id":3,"nome":"DEBORA RIBEIRO PEREIRA ALVES","cpf":"124.847.477-56","telefone":"(55) 55555-5555","telefone_contato":"(55) 55555-5555","telefone_referencia":null,"nome_referencia":null,"score":"808","renda":"1379.18","data_nasc":"1969-12-31","email":"tashgd@jakhds.com"}
+
+["DateTime"]: [2022-02-11 11:48:15]
+Editado por: {"id":1,"name":"Sistema","email":"admin@admin.com","theme":"default"}
+Antes das atualizações: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1983-06-02","email":"teste@teste.com.br"}
+Depois de atualizar: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1969-12-31","email":"testeedita@teste.com.br"}
+
+["DateTime"]: [2022-02-11 13:48:31]
+Editado por: {"id":1,"name":"Sistema","email":"admin@admin.com","theme":"default"}
+Antes das atualizações: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1969-12-31","email":"testeedita@teste.com.br"}
+Depois de atualizar: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1969-12-31","email":"testeedita@teste.com.br"}
+
+["DateTime"]: [2022-02-11 13:54:58]
+Editado por: {"id":1,"name":"Sistema","email":"admin@admin.com","theme":"default"}
+Antes das atualizações: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1969-12-31","email":"testeedita@teste.com.br"}
+Depois de atualizar: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1969-12-31","email":"testeedita@teste.com.br"}
+
+["DateTime"]: [2022-02-11 13:55:31]
+Editado por: {"id":1,"name":"Sistema","email":"admin@admin.com","theme":"default"}
+Antes das atualizações: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1969-12-31","email":"testeedita@teste.com.br"}
+Depois de atualizar: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1969-12-31","email":"testeedita@teste.com.br"}
+
+["DateTime"]: [2022-02-11 13:55:40]
+Editado por: {"id":1,"name":"Sistema","email":"admin@admin.com","theme":"default"}
+Antes das atualizações: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1969-12-31","email":"testeedita@teste.com.br"}
+Depois de atualizar: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1969-12-31","email":"testeedita@teste.com.br"}
+
+["DateTime"]: [2022-02-11 13:55:47]
+Editado por: {"id":1,"name":"Sistema","email":"admin@admin.com","theme":"default"}
+Antes das atualizações: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1969-12-31","email":"testeedita@teste.com.br"}
+Depois de atualizar: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1969-12-31","email":"testeedita@teste.com.br"}
+
+["DateTime"]: [2022-02-11 13:55:58]
+Editado por: {"id":1,"name":"Sistema","email":"admin@admin.com","theme":"default"}
+Antes das atualizações: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1969-12-31","email":"testeedita@teste.com.br"}
+Depois de atualizar: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1969-12-31","email":"testeedita@teste.com.br"}
+
+["DateTime"]: [2022-02-11 13:56:35]
+Editado por: {"id":1,"name":"Sistema","email":"admin@admin.com","theme":"default"}
+Antes das atualizações: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1969-12-31","email":"testeedita@teste.com.br"}
+Depois de atualizar: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1969-12-31","email":"testeedita@teste.com.br"}
+
+["DateTime"]: [2022-02-11 14:40:36]
+Editado por: {"id":1,"name":"Sistema","email":"admin@admin.com","theme":"default"}
+Antes das atualizações: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1969-12-31","email":"testeedita@teste.com.br"}
+Depois de atualizar: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1969-12-31","email":"testeedita@teste.com.br"}
+
+["DateTime"]: [2022-02-11 16:39:10]
+Editado por: {"id":1,"name":"Sistema","email":"admin@admin.com","theme":"default"}
+Antes das atualizações: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1969-12-31","email":"testeedita@teste.com.br"}
+Depois de atualizar: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1969-12-31","email":"testeedita@teste.com.br"}
+
+["DateTime"]: [2022-02-11 16:40:38]
+Editado por: {"id":1,"name":"Sistema","email":"admin@admin.com","theme":"default"}
+Antes das atualizações: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1969-12-31","email":"testeedita@teste.com.br"}
+Depois de atualizar: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1969-12-31","email":"testeedita@teste.com.br"}
+
+["DateTime"]: [2022-02-11 16:47:31]
+Editado por: {"id":1,"name":"Sistema","email":"admin@admin.com","theme":"default"}
+Antes das atualizações: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1969-12-31","email":"testeedita@teste.com.br"}
+Depois de atualizar: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1969-12-31","email":"testeedita@teste.com.br"}
+
+["DateTime"]: [2022-02-11 16:57:02]
+Criado por: {"id":1,"name":"Sistema","email":"admin@admin.com","email_verified_at":null,"theme":"default","created_at":null,"updated_at":null,"permissions":[],"roles":[{"id":1,"name":"Super Admin","guard_name":"web","title":"Super Admin","created_at":null,"updated_at":null,"pivot":{"model_id":1,"role_id":1,"model_type":"App\\Models\\User"}}]}
+Nova Taxa: {"nome":"Setup","valor":"120.00","comissao":"60.00","parcelas":"3","updated_at":"2022-02-11T19:57:02.000000Z","created_at":"2022-02-11T19:57:02.000000Z","id":1}
+
+["DateTime"]: [2022-02-11 16:57:12]
+Editado por: {"id":1,"name":"Sistema","email":"admin@admin.com","theme":"default"}
+Antes das atualizações: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1969-12-31","email":"testeedita@teste.com.br"}
+Depois de atualizar: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1969-12-31","email":"testeedita@teste.com.br"}
+
+["DateTime"]: [2022-02-11 17:21:43]
+Editado por: {"id":1,"name":"Sistema","email":"admin@admin.com","theme":"default"}
+Antes das atualizações: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1969-12-31","email":"testeedita@teste.com.br"}
+Depois de atualizar: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1969-12-31","email":"testeedita@teste.com.br"}

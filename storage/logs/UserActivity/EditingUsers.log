@@ -1,0 +1,5 @@
+
+["DateTime"]: [2022-01-28 17:24:46]
+Updated by: {"id":1,"name":"Sistema","email":"admin@admin.com","theme":"default","permissions":[]}
+Before updates User: {"id":2,"name":"Imobiliaria","email":"imobiliaria@teste.com","theme":"default"} Roles before: ""
+After updates User: {"id":2,"name":"Imobiliaria","email":"imobiliaria@teste.com","theme":"default"} Roles after: "Imobiliária"

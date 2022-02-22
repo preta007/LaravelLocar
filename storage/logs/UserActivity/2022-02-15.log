@@ -1,0 +1,8 @@
+
+["DateTime"]: [2022-02-15 08:43:24]
+Editado por: {"id":1,"name":"Sistema","email":"admin@admin.com","theme":"light"}
+Antes das atualizações: {"id":1,"nome":"HENRY PHILIP MCCOY","cpf":"034.059.789-55","telefone":"(44) 44444-4444","telefone_contato":"(55) 55555-5555","telefone_referencia":null,"nome_referencia":null,"score":"814","renda":"1707.85","data_nasc":"1969-12-31","email":"teste@teste.com.br"}
+Depois de atualizar: {"id":1,"nome":"HENRY PHILIP MCCOY","cpf":"034.059.789-55","telefone":"(44) 44444-4444","telefone_contato":"(55) 55555-5555","telefone_referencia":null,"nome_referencia":null,"score":"814","renda":"1707.85","data_nasc":"1969-12-31","email":"teste@teste.com.br"}
+
+["DateTime"]: [2022-02-15 11:24:03]
+Consulta Cliente: {"nome":"LUIS HENRIQUE GOUVEIA","cpf":"056.026.727-45","data_nasc":"1971-10-27","score":763,"renda":"2071.93","id":4}

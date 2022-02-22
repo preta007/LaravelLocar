@@ -1,0 +1,18 @@
+
+["DateTime"]: [2022-02-17 09:13:40]
+Consulta Cliente: {"nome":"TATIANA FERREIRA RIBEIRO","cpf":"106.473.367-07","data_nasc":"1978-04-15","score":737,"renda":"1379.18","id":5}
+
+["DateTime"]: [2022-02-17 10:11:28]
+Consulta Cliente: {"nome":"CLINTON FRANCIS BARTON","cpf":"888.888.888-88","data_nasc":"1966-05-31","score":0,"renda":"1379.18","id":6}
+
+["DateTime"]: [2022-02-17 10:45:09]
+Consulta Cliente: {"nome":"ANDREA DE SOUZA SILVA TEIXEIRA","cpf":"103.506.437-50","data_nasc":"1981-09-03","score":815,"renda":"1379.18","id":7}
+
+["DateTime"]: [2022-02-17 10:48:31]
+Editado por: {"id":1,"name":"Sistema","email":"admin@admin.com","theme":"default"}
+Antes das atualizações: {"id":7,"nome":"ANDREA DE SOUZA SILVA TEIXEIRA","cpf":"103.506.437-50","telefone":null,"telefone_contato":null,"telefone_referencia":null,"nome_referencia":null,"score":"815","renda":"1379.18","data_nasc":"1981-09-03","email":null}
+Depois de atualizar: {"id":7,"nome":"ANDREA DE SOUZA SILVA TEIXEIRA","cpf":"103.506.437-50","telefone":"(44) 44444-4444","telefone_contato":"(55) 55555-5555","telefone_referencia":null,"nome_referencia":null,"score":"815","renda":"1379.18","data_nasc":"1969-12-31","email":"teste@teste01.com"}
+
+["DateTime"]: [2022-02-17 10:51:02]
+Adicionado por: {"id":1,"name":"Sistema","email":"admin@admin.com","theme":"default"}
+Contrato: {"tipo_imovel":"Comercial","cep":"87305-230","rua":"Rua Jardineira","numero":"258","cidade":"Campo Mour\u00e3o","estado":"PR","bairro":"Jardim Maria Barletta","status":"Aguardando Fatura do Cart\u00e3o","complemento":"Apto 22","valor_locaticio":"650.00","valor_plano":624,"id_plano":3,"id_taxa":"3","id_cliente":"7","id_user":1,"id":6}

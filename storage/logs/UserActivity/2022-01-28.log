@@ -1,0 +1,54 @@
+
+["DateTime"]: [2022-01-28 10:54:57]
+Criado por: {"id":1,"name":"Sistema","email":"admin@admin.com","email_verified_at":null,"theme":"default","created_at":null,"updated_at":"2022-01-28 18:21:47","roles":[{"id":1,"name":"Super Admin","guard_name":"web","title":"Super Admin","created_at":null,"updated_at":null,"pivot":{"model_id":1,"role_id":1,"model_type":"App\\Models\\User"}}]}
+Novo Plano: {"nome":"teste","percentual":"10","limite":"3999","updated_at":"2022-01-28T13:54:57.000000Z","created_at":"2022-01-28T13:54:57.000000Z","id":1}
+
+["DateTime"]: [2022-01-28 11:00:47]
+Atualizado por: {"id":1,"name":"Sistema","email":"admin@admin.com","theme":"default"}
+Antes das atualizações: {"id":1,"nome":"teste","percentual":"10.00","limite":"3999.00","ativo":1}
+After updates User: {"id":1,"nome":"teste log","percentual":"8","limite":"3999.00","ativo":1}
+
+["DateTime"]: [2022-01-28 11:46:22]
+Atualizado por: {"id":1,"name":"Sistema","email":"admin@admin.com","theme":"default"}
+Antes das atualizações: {"id":1,"nome":"teste log","percentual":"8.00","limite":"3999.99","ativo":1}
+After updates User: {"id":1,"nome":"teste log","percentual":"8.00","limite":"3999.49","ativo":1}
+
+["DateTime"]: [2022-01-28 11:46:56]
+Criado por: {"id":1,"name":"Sistema","email":"admin@admin.com","email_verified_at":null,"theme":"default","created_at":null,"updated_at":"2022-01-28 18:21:47","roles":[{"id":1,"name":"Super Admin","guard_name":"web","title":"Super Admin","created_at":null,"updated_at":null,"pivot":{"model_id":1,"role_id":1,"model_type":"App\\Models\\User"}}]}
+Novo Plano: {"nome":"teste 02","percentual":"11","limite":"3333","updated_at":"2022-01-28T14:46:56.000000Z","created_at":"2022-01-28T14:46:56.000000Z","id":2}
+
+["DateTime"]: [2022-01-28 11:47:53]
+Criado por: {"id":1,"name":"Sistema","email":"admin@admin.com","email_verified_at":null,"theme":"default","created_at":null,"updated_at":"2022-01-28 18:21:47","roles":[{"id":1,"name":"Super Admin","guard_name":"web","title":"Super Admin","created_at":null,"updated_at":null,"pivot":{"model_id":1,"role_id":1,"model_type":"App\\Models\\User"}}]}
+Novo Plano: {"nome":"jasdjkasghdas","percentual":"10.00","limite":"4999.99","updated_at":"2022-01-28T14:47:53.000000Z","created_at":"2022-01-28T14:47:53.000000Z","id":3}
+
+["DateTime"]: [2022-01-28 14:11:04]
+Ativado/Desativado por: null
+ Depois Plano: {"id":2,"nome":"teste 02","percentual":"11.00","limite":"3333.00","ativo":1}
+
+["DateTime"]: [2022-01-28 14:11:19]
+Ativado/Desativado por: null
+ Depois Plano: {"id":2,"nome":"teste 02","percentual":"11.00","limite":"3333.00","ativo":0}
+
+["DateTime"]: [2022-01-28 14:23:37]
+Ativado/Desativado por: null
+ Depois Plano: {"id":2,"nome":"teste 02","percentual":"11.00","limite":"3333.00","ativo":1}
+
+["DateTime"]: [2022-01-28 14:24:55]
+Ativado/Desativado por: null
+ Depois Plano: {"id":2,"nome":"teste 02","percentual":"11.00","limite":"3333.00","ativo":0}
+
+["DateTime"]: [2022-01-28 17:32:32]
+Ativado/Desativado por: null
+ Depois Plano: {"id":2,"nome":"teste 02","percentual":"11.00","limite":"3333.00","ativo":1}
+
+["DateTime"]: [2022-01-28 17:32:35]
+Ativado/Desativado por: null
+ Depois Plano: {"id":2,"nome":"teste 02","percentual":"11.00","limite":"3333.00","ativo":0}
+
+["DateTime"]: [2022-01-28 17:32:43]
+Ativado/Desativado por: null
+ Depois Plano: {"id":2,"nome":"teste 02","percentual":"11.00","limite":"3333.00","ativo":1}
+
+["DateTime"]: [2022-01-28 17:32:44]
+Ativado/Desativado por: null
+ Depois Plano: {"id":2,"nome":"teste 02","percentual":"11.00","limite":"3333.00","ativo":0}

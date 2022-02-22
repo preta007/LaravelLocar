@@ -1,0 +1,39 @@
+
+["DateTime"]: [2022-02-14 08:12:10]
+Editado por: {"id":1,"name":"Sistema","email":"admin@admin.com","theme":"default"}
+Antes das atualizações: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1969-12-31","email":"testeedita@teste.com.br"}
+Depois de atualizar: {"id":1,"nome":"HENRY PHILIP MCCOY T\u00c9T\u00c9","cpf":"034.059.789-55","telefone":"(44) 99999-9999","telefone_contato":"(45) 88888-8888","telefone_referencia":null,"nome_referencia":null,"score":"829","renda":"1707.85","data_nasc":"1969-12-31","email":"testeedita@teste.com.br"}
+
+["DateTime"]: [2022-02-14 08:28:24]
+Editado por: {"id":1,"name":"Sistema","email":"admin@admin.com","theme":"default"}
+Antes das atualizações: {"id":2,"nome":"TATIANA FERREIRA RIBEIRO","cpf":"106.473.367-07","telefone":null,"telefone_contato":null,"telefone_referencia":null,"nome_referencia":null,"score":"654","renda":"1379.18","data_nasc":"1978-04-15","email":null}
+Depois de atualizar: {"id":2,"nome":"TATIANA FERREIRA RIBEIRO","cpf":"106.473.367-07","telefone":"(44) 44444-4444","telefone_contato":"(55) 55555-5555","telefone_referencia":null,"nome_referencia":null,"score":"654","renda":"1379.18","data_nasc":"1969-12-31","email":"tasdfsdhgd@jakhds.com"}
+
+["DateTime"]: [2022-02-14 08:53:04]
+Editado por: {"id":1,"name":"Sistema","email":"admin@admin.com","theme":"default"}
+Antes das atualizações: {"id":2,"nome":"TATIANA FERREIRA RIBEIRO","cpf":"106.473.367-07","telefone":"(44) 44444-4444","telefone_contato":"(55) 55555-5555","telefone_referencia":null,"nome_referencia":null,"score":"654","renda":"1379.18","data_nasc":"1969-12-31","email":"tasdfsdhgd@jakhds.com"}
+Depois de atualizar: {"id":2,"nome":"TATIANA FERREIRA RIBEIRO","cpf":"106.473.367-07","telefone":"(44) 44444-4444","telefone_contato":"(55) 55555-5555","telefone_referencia":null,"nome_referencia":null,"score":"654","renda":"1379.18","data_nasc":"1969-12-31","email":"tasdfsdsdfhgd@jakhds.com"}
+
+["DateTime"]: [2022-02-14 11:09:36]
+Consulta Cliente: {"nome":"HENRY PHILIP MCCOY","cpf":"034.059.789-55","data_nasc":"1983-06-02","score":814,"renda":"1707.85","id":1}
+
+["DateTime"]: [2022-02-14 11:10:00]
+Editado por: {"id":1,"name":"Sistema","email":"admin@admin.com","theme":"default"}
+Antes das atualizações: {"id":1,"nome":"HENRY PHILIP MCCOY","cpf":"034.059.789-55","telefone":null,"telefone_contato":null,"telefone_referencia":null,"nome_referencia":null,"score":"814","renda":"1707.85","data_nasc":"1983-06-02","email":null}
+Depois de atualizar: {"id":1,"nome":"HENRY PHILIP MCCOY","cpf":"034.059.789-55","telefone":"(44) 44444-4444","telefone_contato":"(55) 55555-5555","telefone_referencia":null,"nome_referencia":null,"score":"814","renda":"1707.85","data_nasc":"1969-12-31","email":"teste@teste.com.br"}
+
+["DateTime"]: [2022-02-14 15:28:53]
+Consulta Cliente: {"nome":"VANDA DE CASTILHO SILVA","cpf":"032.858.727-30","data_nasc":"1964-04-24","score":0,"renda":"1379.18","id":2}
+
+["DateTime"]: [2022-02-14 15:29:29]
+Editado por: {"id":1,"name":"Sistema","email":"admin@admin.com","theme":"default"}
+Antes das atualizações: {"id":2,"nome":"VANDA DE CASTILHO SILVA","cpf":"032.858.727-30","telefone":null,"telefone_contato":null,"telefone_referencia":null,"nome_referencia":null,"score":"0","renda":"1379.18","data_nasc":"1964-04-24","email":null}
+Depois de atualizar: {"id":2,"nome":"VANDA DE CASTILHO SILVA","cpf":"032.858.727-30","telefone":"(44) 44444-4444","telefone_contato":"(55) 55555-5555","telefone_referencia":null,"nome_referencia":null,"score":"0","renda":"1379.18","data_nasc":"1969-12-31","email":"vanda@teste.com"}
+
+["DateTime"]: [2022-02-14 17:37:54]
+Consulta Cliente: {"nome":"MARIA INES DO N BERNARDES","cpf":"023.584.747-03","data_nasc":"1966-10-26","score":520,"renda":"1379.18","id":3}
+
+["DateTime"]: [2022-02-14 17:38:35]
+Editado por: {"id":1,"name":"Sistema","email":"admin@admin.com","theme":"default"}
+Antes das atualizações: {"id":3,"nome":"MARIA INES DO N BERNARDES","cpf":"023.584.747-03","telefone":null,"telefone_contato":null,"telefone_referencia":null,"nome_referencia":null,"score":"520","renda":"1379.18","data_nasc":"1966-10-26","email":null}
+Depois de atualizar: {"id":3,"nome":"MARIA INES DO N BERNARDES","cpf":"023.584.747-03","telefone":"(55) 55555-5555","telefone_contato":"(55) 55555-5555","telefone_referencia":null,"nome_referencia":null,"score":"520","renda":"1379.18","data_nasc":"1969-12-31","email":"teste@teste.com"}
