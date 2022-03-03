@@ -28,16 +28,22 @@
     <!-- Main content -->
 
     <section class="content">
-        
         <div class="col-lg-10 offset-lg-1 col-sm-12">
             <div class="card card-primary card-outline">
                 <div class="card-header">
-                    <h5 class="m-0"><b>@lang('global.add') Cliente</b></h5>
+                    <h5 class="m-0"><b>@lang('global.add') 
+                    @if(Request::segment(2) == 'cliente')
+                        @lang('global.cliente')
+                    @else
+                        @lang('global.coinquilino') {{ Request::segment(4) }}
+                    @endif
+                    </b></h5>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
                     <form action="{{ route('contratoCreate') }}" method="post" id='cliente'>
                         @csrf
+                        <input type="hidden" name="contrato" value="{{ Request::segment(3) }}">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
