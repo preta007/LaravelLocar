@@ -97,7 +97,7 @@ Route::group(['middleware' => 'auth'],function (){
     Route::post('/contrato/createImovel',[ContratoController::class,'createImovel'])->name('contratoCreateImovel');
     Route::get('/contrato/contratoShow/{id}',[ContratoController::class,'contratoShow'])->name('contratoShow');
     Route::get('/contrato/gestaoContratoShow',[ContratoController::class,'gestaoContratoShow'])->name('gestaoContratoShow');
-
+    Route::get('/contrato/coinquilino/{id}/{tipo}',[ContratoController::class,'contratoCoinquilino'])->name('contratoCoinquilino');
 
 });
 

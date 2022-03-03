@@ -90,12 +90,16 @@ class ContratoController extends Controller
 
         $cliente->fill($request->all());
         $cliente->save();
+        
 
         $activity .="\nDepois de atualizar: ".logObj($cliente);
         LogWriter::user_activity($activity,date('Y-m-d'));
-
-        return redirect()->route('contratoImovel', ['cliente_id' => $cliente->id]);
-
+        //caso for coinquilino salva na tabela n-n e redireciona pra visuzalizar o contrato
+        if($request->get('contrato')){
+            return redirect()->route('contratoShow', ['id' => $request->get('contrato')]);
+        }else{
+            return redirect()->route('contratoImovel', ['cliente_id' => $cliente->id]);
+        }
     }
 
 
@@ -123,6 +127,14 @@ class ContratoController extends Controller
         $contrato = Contrato::with('plano','taxa','cliente')->find($id);
 
         return view('cadastro.imovel.show',compact('contrato'));
+
+    }
+
+    public function contratoCoinquilino()
+    {
+        abort_if_forbidden('contrato.imovel.view');
+ 
+        return view('cadastro.cliente.add');
 
     }
 
@@ -211,7 +223,7 @@ class ContratoController extends Controller
     public function salvaSpc($cpf)
     {   
         $consultaDB = Cliente::where('cpf',$cpf)->count();
-        
+
         if($consultaDB > 0){
             $dados = Cliente::where('cpf',$cpf)->get();
             return [

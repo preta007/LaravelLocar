@@ -47,6 +47,8 @@ class PermissionSeeder extends Seeder
             ["name" => 'taxa.add', "title" => 'Adicionar novas taxas', "guard_name" => 'web'],
             ["name" => 'taxa.delete', "title" => 'Excluir planos', "guard_name" => 'web'],
 
+            ["name" => 'gestao.contrato.score.show', "title" => 'Ver score', "guard_name" => 'web'],
+
         ];
 
         DB::table('permissions')->insert($permission);

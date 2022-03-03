@@ -69,6 +69,8 @@ return [
     'registration_number'                  => 'Registratsiya raqami',
     'user_add'                             => 'Kim tomonidan kiritilgan',
     'inn'                                  => 'INN',
+    'cliente'                              => 'Cliente',
+    'coinquilino'                          => 'Coinquilino',
     'clients'                              => 'Mijozlar',
     'clientId'                             => 'Mijoz_ID',
     'client_id'                            => 'Mijoz ID',

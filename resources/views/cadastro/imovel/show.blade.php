@@ -51,7 +51,7 @@
                 <div class="nav flex-column nav-tabs h-100" id="vert-tabs-tab" role="tablist" aria-orientation="vertical">
                   <a class="nav-link active" id="vert-tabs-contrato-tab" data-toggle="pill" href="#vert-tabs-contrato" role="tab" aria-controls="vert-tabs-contrato" aria-selected="true">Dados da Locação</a>
                   <a class="nav-link" id="vert-tabs-cliente-tab" data-toggle="pill" href="#vert-tabs-cliente" role="tab" aria-controls="vert-tabs-cliente" aria-selected="false">Dados do Inquilino</a>
-                  <a class="nav-link" id="vert-tabs-messages-tab" data-toggle="pill" href="#vert-tabs-messages" role="tab" aria-controls="vert-tabs-messages" aria-selected="false">Coninquilino</a>
+                  <a class="nav-link" id="vert-tabs-coinquilino-tab" data-toggle="pill" href="#vert-tabs-coinquilino" role="tab" aria-controls="vert-tabs-coinquilino" aria-selected="false">Coninquilino</a>
                   <a class="nav-link" id="vert-tabs-settings-tab" data-toggle="pill" href="#vert-tabs-settings" role="tab" aria-controls="vert-tabs-settings" aria-selected="false">Settings</a>
                 </div>
               </div>
@@ -130,11 +130,24 @@
                                 <td><b>Telefone Contato:</b></td>
                                 <td>{{ $contrato->cliente->telefone_contato }}</td>
                             </tr>
+                            @can('gestao.contrato.score.show')
+                                <tr>
+                                    <td><b>Score:</b></td>
+                                    <td><span style='float: left;'>{{ $contrato->cliente->score }}</span> <button type="button" class="btn btn-block btn-primary btn-xs" style='width: 80%; margin-left: 10%; '> clique e veja o dossie </button></td>
+                                </tr>
+                            @endcan
                         </tbody>
                     </table>
                 </div>
-                  <div class="tab-pane fade" id="vert-tabs-messages" role="tabpanel" aria-labelledby="vert-tabs-messages-tab">
-                     Morbi turpis dolor, vulputate vitae felis non, tincidunt congue mauris. Phasellus volutpat augue id mi placerat mollis. Vivamus faucibus eu massa eget condimentum. Fusce nec hendrerit sem, ac tristique nulla. Integer vestibulum orci odio. Cras nec augue ipsum. Suspendisse ut velit condimentum, mattis urna a, malesuada nunc. Curabitur eleifend facilisis velit finibus tristique. Nam vulputate, eros non luctus efficitur, ipsum odio volutpat massa, sit amet sollicitudin est libero sed ipsum. Nulla lacinia, ex vitae gravida fermentum, lectus ipsum gravida arcu, id fermentum metus arcu vel metus. Curabitur eget sem eu risus tincidunt eleifend ac ornare magna.
+                  <div class="tab-pane fade" id="vert-tabs-coinquilino" role="tabpanel" aria-labelledby="vert-tabs-coinquilino-tab">
+                  <table class="table table-hover text-nowrap">
+                        <tbody>
+                            <tr>
+                                <td><a href="{{ route('contratoCoinquilino', ['id' => $contrato->id, 'tipo'=>'participativo']) }}" class="btn btn-block btn-primary btn-xs" style='width: 80%; margin-left: 10%; '>Adicionar coinquilino participativo</button></td>
+                                <td><a href="{{ route('contratoCliente') }}" class="btn btn-block btn-primary btn-xs" style='width: 80%; margin-left: 10%; '>Adicionar coinquilino titular cartão</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
                   </div>
                   <div class="tab-pane fade" id="vert-tabs-settings" role="tabpanel" aria-labelledby="vert-tabs-settings-tab">
                      Pellentesque vestibulum commodo nibh nec blandit. Maecenas neque magna, iaculis tempus turpis ac, ornare sodales tellus. Mauris eget blandit dolor. Quisque tincidunt venenatis vulputate. Morbi euismod molestie tristique. Vestibulum consectetur dolor a vestibulum pharetra. Donec interdum placerat urna nec pharetra. Etiam eget dapibus orci, eget aliquet urna. Nunc at consequat diam. Nunc et felis ut nisl commodo dignissim. In hac habitasse platea dictumst. Praesent imperdiet accumsan ex sit amet facilisis.
