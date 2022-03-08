@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Api;
 
 use SoapClient;
+use App\Http\Controllers\PDFController;
+
 
 class ApiSpcController
 {
@@ -11,8 +13,8 @@ class ApiSpcController
         $wsdl = "https://treina.spc.org.br/spc/remoting/ws/consulta/consultaWebService?wsdl";
         $location = "https://treina.spc.org.br/spc/remoting/ws/consulta/consultaWebService";
 
-        $user = '3745931';
-        $pass = '04022022';
+        $user = '4085931';
+        $pass = 'temp@123';
  
         $context = [
             'http' =>
@@ -70,11 +72,15 @@ class ApiSpcController
                 throw $fault;
                 }
             }
-             
+
+            //$pdf = PDFController::dossie($result,$documento_consumidor);
+            $pdf = ApiSpcController::gravar(json_encode($result),$documento_consumidor );
+            
             $dadosCliente['nome']       =$result->consumidor->{'consumidor-pessoa-fisica'}->nome;
             $dadosCliente['nascimento'] =$result->consumidor->{'consumidor-pessoa-fisica'}->{'data-nascimento'};
             $dadosCliente['score']      =$result->{'spc-score-3-meses'}->{'detalhe-spc-score-3-meses'}->score;
             $dadosCliente['renda']      =number_format($result->{'renda-presumida-spc'}->resumo->{'valor-total'}, 2, ".", "");
+            $dadosCliente['dossie']     =$pdf;
 
             return $dadosCliente;
 
@@ -83,6 +89,37 @@ class ApiSpcController
     public function soNumero($str)
     {
         return preg_replace("/[^0-9]/", "", $str);
+    }
+
+    function gravar($texto, $cpf){
+        //Variável arquivo armazena o nome e extensão do arquivo.
+        $arquivo = storage_path('dossie/'.$cpf.'.txt');
+        
+        //Variável $fp armazena a conexão com o arquivo e o tipo de ação.
+        $fp = fopen($arquivo, "a+");
+    
+        //Escreve no arquivo aberto.
+        fwrite($fp, $texto);
+        
+        //Fecha o arquivo.
+        fclose($fp);
+
+        return $cpf.'.txt';
+    }
+
+    function ler($arquivo){
+        
+        //Variável $fp armazena a conexão com o arquivo e o tipo de ação.
+        $fp = fopen(storage_path($arquivo), "r");
+    
+        //Lê o conteúdo do arquivo aberto.
+        $conteudo = fread($fp, filesize(storage_path($arquivo)));
+        
+        //Fecha o arquivo.
+        fclose($fp);
+        
+        //retorna o conteúdo.
+        return $conteudo;
     }
 
 }

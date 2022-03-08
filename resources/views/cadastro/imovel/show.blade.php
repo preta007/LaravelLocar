@@ -133,7 +133,7 @@
                             @can('gestao.contrato.score.show')
                                 <tr>
                                     <td><b>Score:</b></td>
-                                    <td><span style='float: left;'>{{ $contrato->cliente->score }}</span> <button type="button" class="btn btn-block btn-primary btn-xs" style='width: 80%; margin-left: 10%; '> clique e veja o dossie </button></td>
+                                    <td><span style='float: left;'>{{ $contrato->cliente->score }}</span> <a href="{{ route('dossie', ['result' => $contrato->cliente->dossie]) }}" class="btn btn-block btn-primary btn-xs" style='width: 80%; margin-left: 10%; ' target='_tblank'> clique e veja o dossie </button></td>
                                 </tr>
                             @endcan
                         </tbody>
@@ -143,9 +143,47 @@
                   <table class="table table-hover text-nowrap">
                         <tbody>
                             <tr>
-                                <td><a href="{{ route('contratoCoinquilino', ['id' => $contrato->id, 'tipo'=>'participativo']) }}" class="btn btn-block btn-primary btn-xs" style='width: 80%; margin-left: 10%; '>Adicionar coinquilino participativo</button></td>
-                                <td><a href="{{ route('contratoCliente') }}" class="btn btn-block btn-primary btn-xs" style='width: 80%; margin-left: 10%; '>Adicionar coinquilino titular cartão</button></td>
+                                <td colspan=2><a href="{{ route('contratoCoinquilino', ['id' => $contrato->id]) }}" class="btn btn-block btn-primary btn-xs" style='width: 80%; margin-left: 10%; '>Adicionar coinquilino</button></td>
                             </tr>
+                            @foreach ($contrato->coinquilino as $cliente)
+                                <tr>
+                                    <td style='width: 30%;'><b>Nome:</b></td>
+                                    <td>{{ $cliente->nome }}</td>
+                                </tr>
+                                <tr>
+                                    <td><b>CPF:</b></td>
+                                    <td>{{ $cliente->cpf }}</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Dara Nascimento:</b></td>
+                                    <td>{{ date( 'd/m/Y' , strtotime($cliente->data_nasc)) }}</td>
+                                </tr>
+                                <tr>
+                                    <td><b>E-mail</b></td>
+                                    <td>{{ $cliente->email }}</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Telefone:</b></td>
+                                    <td>{{ $cliente->telefone }}</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Telefone Contato:</b></td>
+                                    <td>{{ $cliente->telefone_contato }}</td>
+                                </tr>
+                                @can('gestao.contrato.score.show')
+                                    <tr>
+                                        <td><b>Score:</b></td>
+                                        <td><span style='float: left;'>{{ $cliente->score }}</span> <a href="{{ route('dossie', ['result' => $cliente->dossie]) }}" class="btn btn-block btn-primary btn-xs" style='width: 80%; margin-left: 10%; ' target='_tblank'> clique e veja o dossie </button></td>
+                                    </tr>
+                                @endcan
+                                <tr>
+                                    <td colspan=2 style='background: #f700654d;'></td>
+                                </tr>
+                               
+                            @endforeach
+
+
+                            
                         </tbody>
                     </table>
                   </div>

@@ -17,7 +17,6 @@ class CreateCoinquilinosTable extends Migration
             $table->id();
             $table->unsignedBigInteger('id_contrato')->unsigned();
             $table->unsignedBigInteger('id_cliente')->unsigned();
-            $table->timestamps();
 
             $table->foreign('id_contrato')->references('id')->on('contratos');
             $table->foreign('id_cliente')->references('id')->on('clientes');

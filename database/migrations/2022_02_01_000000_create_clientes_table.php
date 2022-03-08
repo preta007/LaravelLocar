@@ -25,7 +25,8 @@ class CreateClientesTable extends Migration
             $table->decimal('renda', 10,2)->nullable();
             $table->date('data_nasc')->nullable();
             $table->string('email')->nullable();
-            $table->unsignedBigInteger('id_vindi')->unsigned();
+            $table->string('dossie')->nullable();
+            $table->unsignedBigInteger('id_vindi')->nullable();
             $table->timestamps();
         });
     }
