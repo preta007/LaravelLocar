@@ -9,6 +9,7 @@ use App\Http\Controllers\Blade\ApiUserController;
 use App\Http\Controllers\Gestao\PlanoController;
 use App\Http\Controllers\Gestao\TaxaController;
 use App\Http\Controllers\Cadastro\ContratoController;
+use App\Http\Controllers\PDFController;
 
 /*
 |--------------------------------------------------------------------------
@@ -97,9 +98,12 @@ Route::group(['middleware' => 'auth'],function (){
     Route::post('/contrato/createImovel',[ContratoController::class,'createImovel'])->name('contratoCreateImovel');
     Route::get('/contrato/contratoShow/{id}',[ContratoController::class,'contratoShow'])->name('contratoShow');
     Route::get('/contrato/gestaoContratoShow',[ContratoController::class,'gestaoContratoShow'])->name('gestaoContratoShow');
-    Route::get('/contrato/coinquilino/{id}/{tipo}',[ContratoController::class,'contratoCoinquilino'])->name('contratoCoinquilino');
+    Route::get('/contrato/coinquilino/{id}',[ContratoController::class,'contratoCoinquilino'])->name('contratoCoinquilino');
 
 });
+
+
+Route::get('dossie/{result}', [PDFController::class, 'dossie'])->name('dossie');
 
 // Change language session condition
 /*Route::get('/language/{lang}',function ($lang){

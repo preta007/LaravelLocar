@@ -13,10 +13,12 @@ use App\Models\Cliente;
 use App\Models\Contrato;
 use App\Models\Taxa;
 use App\Models\Plano;
+use App\Models\Coinquilino;
 use GuzzleHttp\Client;
 use App\Http\Controllers\Api\ApiSpcController;
 use Vindi\ApiRequester;
 use Vindi;
+
 
 
 
@@ -96,6 +98,24 @@ class ContratoController extends Controller
         LogWriter::user_activity($activity,date('Y-m-d'));
         //caso for coinquilino salva na tabela n-n e redireciona pra visuzalizar o contrato
         if($request->get('contrato')){
+
+            $cliente->contrato()->attach([$request->get('contrato')]);
+
+            $contrato = Contrato::find($request->get('contrato'));
+            if($contrato->status == 'Aguardando Coinquilino'){
+                if($cliente->score > 350){
+                    $status = 'Aprovado';
+                }else{
+                    $status = 'Mesa de Análise';
+                }
+                $contrato->fill( ['status' => $status]);
+                $contrato->save();
+            }
+
+           
+            $activity ="\nCoinquilino add ao contrato: ".logObj($cliente);
+            LogWriter::user_activity($activity,date('Y-m-d'));
+
             return redirect()->route('contratoShow', ['id' => $request->get('contrato')]);
         }else{
             return redirect()->route('contratoImovel', ['cliente_id' => $cliente->id]);
@@ -114,7 +134,7 @@ class ContratoController extends Controller
 
     public function gestaoContratoShow()
     {
-        $contratos = Contrato::with('plano','taxa','cliente')->orderBy('id', 'desc')->get();
+        $contratos = Contrato::orderBy('id', 'desc')->get();
 
         return view('gestao.contrato.show', compact('contratos'));
 
@@ -124,8 +144,8 @@ class ContratoController extends Controller
     {
         abort_if_forbidden('contrato.imovel.view');
 
-        $contrato = Contrato::with('plano','taxa','cliente')->find($id);
-
+        $contrato = Contrato::find($id);
+ 
         return view('cadastro.imovel.show',compact('contrato'));
 
     }
@@ -160,7 +180,7 @@ class ContratoController extends Controller
             $request->status = 'Mesa de Análise';
             $request->id_plano = 1;
         }elseif($cliente['score'] >= 100 && $cliente['score'] <= 350 ){ 
-            $request->status ='Aguardando Co-Inquilino';
+            $request->status ='Aguardando Coinquilino';
             $request->id_plano = 1;
         }elseif($cliente['score'] >= 351 && $cliente['score'] <= 550){
             $request->status ='Aprovado';
@@ -236,14 +256,16 @@ class ContratoController extends Controller
 
         }else{
             $cliente = ApiSpcController::consultaCpf($cpf);
-
+            
             if(isset($cliente['nome'])){
+                
                 $cliente = Cliente::create([
                     'nome'      => $cliente['nome'],
                     'cpf'       => $cpf,
                     'data_nasc' => date('Y-m-d', strtotime($cliente['nascimento'])),
                     'score'     => $cliente['score'],
-                    'renda'     => $cliente['renda']
+                    'renda'     => $cliente['renda'],
+                    'dossie'    => $cliente['dossie']
                 ]);
 
                 $activity ="\nConsulta Cliente: ".logObj($cliente);

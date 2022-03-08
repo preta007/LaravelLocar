@@ -17,9 +17,14 @@ class Cliente extends Model
         'score',
         'renda',
         'data_nasc',
-        'email'
+        'email',
+        'dossie'
     ];
 
+    public function contrato()
+    {
+        return $this->belongsToMany(contrato::class, 'coinquilinos', 'id_cliente', 'id_contrato');
+    }
 
 
 }
