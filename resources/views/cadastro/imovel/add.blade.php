@@ -43,6 +43,7 @@
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
+                    
                     <form action="{{ route('contratoCreateImovel') }}" method="post">
                         @csrf
                         <input type="hidden" name="id_cliente" value ='{{ $cliente->id }}' >

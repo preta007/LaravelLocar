@@ -32,7 +32,6 @@ class CreateContratosTable extends Migration
             $table->unsignedBigInteger('id_cliente')->unsigned();
             $table->unsignedBigInteger('id_user')->unsigned();
             $table->date('data_pagamento')->nullable();
-            $table->string('id_coinquilino')->nullable();;
             $table->timestamps();
 
             $table->foreign('id_plano')->references('id')->on('planos');

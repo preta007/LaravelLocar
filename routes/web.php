@@ -6,6 +6,7 @@ use App\Http\Controllers\Blade\RoleController;
 use App\Http\Controllers\Blade\PermissionController;
 use App\Http\Controllers\Blade\HomeController;
 use App\Http\Controllers\Blade\ApiUserController;
+use App\Http\Controllers\Blade\UploadController;
 use App\Http\Controllers\Gestao\PlanoController;
 use App\Http\Controllers\Gestao\TaxaController;
 use App\Http\Controllers\Cadastro\ContratoController;
@@ -99,6 +100,9 @@ Route::group(['middleware' => 'auth'],function (){
     Route::get('/contrato/contratoShow/{id}',[ContratoController::class,'contratoShow'])->name('contratoShow');
     Route::get('/contrato/gestaoContratoShow',[ContratoController::class,'gestaoContratoShow'])->name('gestaoContratoShow');
     Route::get('/contrato/coinquilino/{id}',[ContratoController::class,'contratoCoinquilino'])->name('contratoCoinquilino');
+
+    //upload de arquivos
+    Route::post('/upload',[UploadController::class,'uploadContrato'])->name('uploadContrato');
 
 });
 

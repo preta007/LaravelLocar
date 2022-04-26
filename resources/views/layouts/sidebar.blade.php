@@ -4,17 +4,17 @@
     <ul class="nav nav-pills nav-sidebar flex-column nav-child-indent" data-widget="treeview" role="menu" data-accordion="false">
     @canany('cadastro.show')
             <li class="nav-item has-treeview">
-                <a href="#" class="nav-link {{ (Request::is('contrato*')) ? 'active':''}}">
+                <a href="#" class="nav-link {{ (Request::is('contrato/cliente*')) ? 'active':''}}">
                 <i class="fas fa-laptop"></i>
                     <p>
                         @lang('cruds.register.title')
                         <i class="right fas fa-angle-left"></i>
                     </p>
                 </a>
-                <ul class="nav nav-treeview" style="display: {{ (Request::is('contrato*')) ? 'block':'none'}};">
+                <ul class="nav nav-treeview" style="display: {{ (Request::is('contrato/cliente*')) ? 'block':'none'}};">
                     @can('contrato.show')
                         <li class="nav-item">
-                            <a href="{{ route('contratoCliente') }}" class="nav-link {{ Request::is('contrato*') ? "active":'' }}">
+                            <a href="{{ route('contratoCliente') }}" class="nav-link {{ Request::is('contrato/cliente*') ? 'active':'' }}">
                                 <i class="fas fa-file-contract"></i>
                                 <p> @lang('cruds.contrato.title_singular')</p>
                             </a>
@@ -23,7 +23,7 @@
 
                     @can('imobiliaria.show')
                         <li class="nav-item">
-                            <a href="{{ route('taxaIndex') }}" class="nav-link {{ Request::is('imobiliaria*') ? "active":'' }}">
+                            <a href="{{ route('taxaIndex') }}" class="nav-link {{ Request::is('imobiliaria*') ? 'active':'' }}">
                                 <i class="fas fa-sign"></i>
                                 <p> @lang('cruds.imobiliaria.title_singular')</p>
                             </a>
@@ -34,17 +34,17 @@
     @endcanany  
     @canany('manage.show')
             <li class="nav-item has-treeview">
-                <a href="#" class="nav-link {{ (Request::is('plano*' || Request::is('taxa*'))) ? 'active':''}}">
+                <a href="#" class="nav-link {{ (Request::is('planos*') || Request::is('taxas*') || Request::is('contrato/gestaoContratoShow*')) ? 'active':''}}">
                     <i class="fas fa-tasks"></i>
                     <p>
                         @lang('cruds.management.title')
                         <i class="right fas fa-angle-left"></i>
                     </p>
                 </a>
-                <ul class="nav nav-treeview" style="display: {{ (Request::is('plano*')) ? 'block':'none'}};">
+                <ul class="nav nav-treeview" style="display: {{ (Request::is('planos*')|| Request::is('taxas*') || Request::is('contrato/gestaoContratoShow*')) ? 'block':'none'}};">
                     @can('gestao.contrato.show')
                         <li class="nav-item">
-                            <a href="{{ route('gestaoContratoShow') }}" class="nav-link {{ Request::is('contrato*') ? "active":'' }}">
+                            <a href="{{ route('gestaoContratoShow') }}" class="nav-link {{ Request::is('contrato/gestaoContratoShow*') ? 'active':'' }}">
                             <i class="fas fa-file-contract"></i>
                                 <p>  @lang('cruds.contrato.title_singular')</p>
                             </a>
@@ -52,7 +52,7 @@
                     @endcan
                     @can('plano.show')
                         <li class="nav-item">
-                            <a href="{{ route('planoIndex') }}" class="nav-link {{ Request::is('plano*') ? "active":'' }}">
+                            <a href="{{ route('planoIndex') }}" class="nav-link {{ Request::is('planos*') ? 'active':'' }}">
                                 <i class="fas fa-star"></i>
                                 <p> @lang('cruds.plano.title_singular')</p>
                             </a>
@@ -61,7 +61,7 @@
 
                     @can('taxa.show')
                         <li class="nav-item">
-                            <a href="{{ route('taxaIndex') }}" class="nav-link {{ Request::is('taxa*') ? "active":'' }}">
+                            <a href="{{ route('taxaIndex') }}" class="nav-link {{ Request::is('taxas*') ? 'active':'' }}">
                                 <i class="fas fa-percentage"></i>
                                 <p> @lang('cruds.taxa.title_singular')</p>
                             </a>
