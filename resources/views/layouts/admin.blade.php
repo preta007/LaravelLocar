@@ -129,6 +129,7 @@
 <!-- ./wrapper -->
 <script src="{{asset('plugins/jquery/jquery.min.js')}}"></script>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
 <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.js"></script>
 
 <!-- Bootstrap 4 -->
@@ -192,6 +193,8 @@
 <script src="{{asset('plugins/datatables-buttons/js/buttons.print.min.js') }}"></script>
 <script src="{{asset('plugins/datatables-buttons/js/buttons.colVis.min.js') }}"></script>
 
+<!-- bs-custom-file-input -->
+<script src="{{asset('plugins/bs-custom-file-input/bs-custom-file-input.min.js') }}"></script>
 
 <!-- AdminLTE for demo purposes -->
 <script src="{{asset('dist/js/demo.js') }}"></script>

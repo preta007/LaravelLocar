@@ -49,4 +49,6 @@ class Contrato extends Model
     {
         return $this->belongsToMany(Cliente::class, 'coinquilinos', 'id_contrato', 'id_cliente');
     }
+
+
 }

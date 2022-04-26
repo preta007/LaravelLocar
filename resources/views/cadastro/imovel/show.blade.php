@@ -52,7 +52,7 @@
                   <a class="nav-link active" id="vert-tabs-contrato-tab" data-toggle="pill" href="#vert-tabs-contrato" role="tab" aria-controls="vert-tabs-contrato" aria-selected="true">Dados da Locação</a>
                   <a class="nav-link" id="vert-tabs-cliente-tab" data-toggle="pill" href="#vert-tabs-cliente" role="tab" aria-controls="vert-tabs-cliente" aria-selected="false">Dados do Inquilino</a>
                   <a class="nav-link" id="vert-tabs-coinquilino-tab" data-toggle="pill" href="#vert-tabs-coinquilino" role="tab" aria-controls="vert-tabs-coinquilino" aria-selected="false">Coninquilino</a>
-                  <a class="nav-link" id="vert-tabs-settings-tab" data-toggle="pill" href="#vert-tabs-settings" role="tab" aria-controls="vert-tabs-settings" aria-selected="false">Settings</a>
+                  <a class="nav-link" id="vert-tabs-arquivos-tab" data-toggle="pill" href="#vert-tabs-arquivos" role="tab" aria-controls="vert-tabs-arquivos" aria-selected="false">Arquivos</a>
                 </div>
               </div>
               <div class="col-7 col-sm-9">
@@ -187,14 +187,75 @@
                         </tbody>
                     </table>
                   </div>
-                  <div class="tab-pane fade" id="vert-tabs-settings" role="tabpanel" aria-labelledby="vert-tabs-settings-tab">
-                     Pellentesque vestibulum commodo nibh nec blandit. Maecenas neque magna, iaculis tempus turpis ac, ornare sodales tellus. Mauris eget blandit dolor. Quisque tincidunt venenatis vulputate. Morbi euismod molestie tristique. Vestibulum consectetur dolor a vestibulum pharetra. Donec interdum placerat urna nec pharetra. Etiam eget dapibus orci, eget aliquet urna. Nunc at consequat diam. Nunc et felis ut nisl commodo dignissim. In hac habitasse platea dictumst. Praesent imperdiet accumsan ex sit amet facilisis.
+                  <div class="tab-pane fade" id="vert-tabs-arquivos" role="tabpanel" aria-labelledby="vert-tabs-arquivos-tab">
+                  
+                  <form action="{{ route('uploadContrato') }}" method="post" enctype="multipart/form-data">
+                        @csrf
+                            <input type="hidden" name='id' value='{{ $contrato->id }}'>
+                            <input type="hidden" name='id_cliente' value='{{ $contrato->cliente->id }}'>
+                           
+                            @if($contrato->status =='Aguardando Fatura do Cartão') 
+                                <div class="form-group col-7 col-sm-9">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" multiple name='fatura'>
+                                        <label class="custom-file-label" for="customFile" data-browse="Selecione">Fatura do Cartão</label>
+                                    </div>
+                                </div>
+                            @endif
+                            @if($contrato->status =='Pago') 
+                                <div class="form-group col-7 col-sm-9">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" name='contrato' >
+                                        <label class="custom-file-label" for="customFile" data-browse="Selecione">Contrato</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-7 col-sm-9">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" name='vistoria' >
+                                        <label class="custom-file-label" for="customFile" data-browse="Selecione">Vistoria</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-7 col-sm-9">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" name='apolice'>
+                                        <label class="custom-file-label" for="customFile" data-browse="Selecione">Apólice</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-7 col-sm-9">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" name='contratoAdm' >
+                                        <label class="custom-file-label" for="customFile" data-browse="Selecione">Contrato Administrativo</label>
+                                    </div>
+                                </div>
+                            @endif
+                                <div class="form-group col-7 col-sm-9">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" name='rgCpf' >
+                                        <label class="custom-file-label" for="customFile" data-browse="Selecione">RG E CPF</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-7 col-sm-9">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" name='anexo1'>
+                                        <label class="custom-file-label" for="customFile" data-browse="Selecione">Anexo 1</label>
+                                    </div>
+                                </div>
+                                <div class="form-group col-7 col-sm-9">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" name='anexo2' >
+                                        <label class="custom-file-label" for="customFile" data-browse="Selecione">Anexo 2</label>
+                                    </div>
+                                </div>
+                            <div class="form-group col-7 col-sm-9">
+                                    <button type="submit" class="btn btn-success float-right">@lang('global.send_attachment')</button>
+                                    <a href="{{ route('userIndex') }}" class="btn btn-default float-left">@lang('global.cancel')</a>
+                            </div>
+                        </form>
                   </div>
                 </div>
               </div>
             </div>
 
-   
           </div>
           <!-- /.card -->
         </div>
@@ -204,5 +265,15 @@
             <!-- /.row -->
         </section>
         <!-- /.content -->
+@endsection
+
+@section('scripts')
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+        bsCustomFileInput.init()
+        })
+      
+    </script>
 @endsection
 

@@ -35,7 +35,7 @@
                         <div class="card">
               <!-- /.card-header -->
               <div class="card-body">
-                <table id="example1" class="table table-bordered table-striped">
+                <table id="dataTable" class="table table-bordered table-striped dataTable dtr-inline table-responsive-lg" role="grid" aria-describedby="dataTable_info">
                   <thead>
                   <tr>
                     <th>@lang('panel.gestao.id')</th>
@@ -87,14 +87,4 @@
         </section>
         <!-- /.content -->
 @endsection
-@section('scripts')
-<script>
-  $(function () {
-    $("#example1").DataTable({
-      "responsive": true, "lengthChange": false, "autoWidth": false,
-      "order": [[ 3, "desc" ]],
-      "buttons": ["copy", "csv", "excel", "pdf", "print"]
-    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
-  });
-</script>
-@endsection
+
